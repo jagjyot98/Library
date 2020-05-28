@@ -11,8 +11,32 @@ public class Project1{
 		Library1 lib= new Library1();
 		Scanner obj=new Scanner(System.in);
 	    Class.forName("com.mysql.jdbc.Driver");  	
-	    
-	    // Working on main database 'Library'
+	   
+				
+	     /* 
+	     // "THIS REQUIRES SOME BASIC KNOWLEGDE OF MYSQL SETUP ON YOUR SYSTEM" 
+	     
+	     // CREATING CONNECTION WITH MYSQL TO CREATE DATABASE
+	     Connection con =DriverManager.getConnection("jdbc:mysql://localhost:3306","root","<password of mysql on your system>");
+	   
+	   // CREATING DATABASE "Library"
+	   PreparedStatement ps= con.prepareStatement("create database Library");
+        ps.executeUpdate();
+        System.out.println("Database Created");   //  DATABASE "Library" SUCCESSFULLY CREATED
+		
+	// CREATING CONNECTION WITH DATABASE "Library" TO CREATE TABLES 
+	Connection con1 =DriverManager.getConnection("jdbc:mysql://localhost:3306/Library","root","<password of mysql on your system>");
+	
+	// CREATING TABLE "Book1" IN DATABASE WITH ATTRIBUTES (ID NO., NAME,AUTHOR, GENRE, STATUS)       
+       PreparedStatement pst= con1.prepareStatement("create table Book1(Id int,Name varchar(20),Author varchar(20),Genre varchar(15),Status varchar(20))");         
+        pst.executeUpdate();
+        System.out.println("Book Table Created");   // TABLE "Book1" SUCCESSFULLY CREATED
+	
+	// CREATING TABLE "issue" IN DATABASE WITH ATTRIBUTES (CARD ID NO., NAME, BOOK ID NO., ISSUE DATE, RETURN DATE, FINE)
+        PreparedStatement pst1= con1.prepareStatement("create table issue(CardId int,Name varchar(15),Book_id int,Issue_Date varchar(13),Return_Date varchar(13),Fine int)");
+	    pst1.executeUpdate();
+	    System.out.println("Issue Table Created");	// TABLE "issue" SUCCESSFULLY CREATED
+	    */
 	    
 	    do{
 		System.out.println("*****Library Management System*****");
