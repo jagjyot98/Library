@@ -14,7 +14,7 @@ public class Project1{
 	   
 				
 	     /* 
-	     // "THIS REQUIRES SOME BASIC KNOWLEGDE OF MYSQL SETUP ON YOUR SYSTEM" 
+	     //  THIS PART IS FOR INITIAL SETTING UP OF BACKEND DATABASE  
 	     
 	     // CREATING CONNECTION WITH MYSQL TO CREATE DATABASE
 	     Connection con =DriverManager.getConnection("jdbc:mysql://localhost:3306","root","<password of mysql on your system>");
