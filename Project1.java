@@ -78,7 +78,7 @@ class Library1
 
               void add()throws ClassNotFoundException, SQLException
 	{
-	 Connection con =DriverManager.getConnection("jdbc:mysql://localhost:3306/Library","root","334");
+	 Connection con =DriverManager.getConnection("jdbc:mysql://localhost:3306/Library","root","<password of mysql on your system>");
 	        System.out.print("Entr Book Id:");
 	        id=cin.nextInt();
 	        System.out.print("Entr Name of Book:");
@@ -103,7 +103,7 @@ class Library1
               void view()throws ClassNotFoundException, SQLException
 	{
 	System.out.print("\nREMEMBER the BOOK ID for issue and check STATUS for its availability !!!");
-	Connection con =DriverManager.getConnection("jdbc:mysql://localhost:3306/Library","root","334");
+	Connection con =DriverManager.getConnection("jdbc:mysql://localhost:3306/Library","root","<password of mysql on your system>");
 		 PreparedStatement ps= con.prepareStatement("select * from Book1");
 		 ResultSet rs=ps.executeQuery();
 		 while(rs.next())
@@ -113,7 +113,7 @@ class Library1
 	
         void iss()throws ClassNotFoundException, SQLException
         {
-        Connection con =DriverManager.getConnection("jdbc:mysql://localhost:3306/Library","root","334");
+        Connection con =DriverManager.getConnection("jdbc:mysql://localhost:3306/Library","root","<password of mysql on your system>");
         System.out.print("Entr Card Id:");
         id=cin.nextInt();
         System.out.print("Entr Name:");
@@ -156,7 +156,7 @@ class Library1
 	
         void his()throws ClassNotFoundException, SQLException
         {
-       Connection con =DriverManager.getConnection("jdbc:mysql://localhost:3306/Library","root","334");
+       Connection con =DriverManager.getConnection("jdbc:mysql://localhost:3306/Library","root","<password of mysql on your system>");
        PreparedStatement pst=con.prepareStatement("select * from issue");
        ResultSet rs=pst.executeQuery();
        while(rs.next())
